@@ -1,1 +1,1 @@
-# healthJournal
+# emotion scanner
