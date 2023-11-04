@@ -28,6 +28,10 @@ def store_img():
     eopt = process(file_loc)
     if(eopt == "happy") :
         m = "wow that's good" 
+    if(eopt == "mad") :
+        m = "hey try taking a few deep breaths"
+    if(eopt == "sad") :
+        m = "its okay to feel down, do you need someone to talk to?"
     
     return render_template('output.html', emotion_output=eopt, message=m)   
 
