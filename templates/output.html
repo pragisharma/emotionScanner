@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Feedback </title>
-</head>
-<body>
+{%extends "main_template.html"%}
+
+{% block content%}
     <h1>
         Your emotion has been processed succesfully! 
     </h1>
 
-    <h2>{{emotion_output, message}} </h2>
+    <h2>{{message}} </h2>
     
-    <a href="/">click here to return home</a>
-</body>
-</html>
+    <!-- <a href="/">click here to return home</a> -->
+
+{%endblock%}

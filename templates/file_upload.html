@@ -1,18 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Emotion Scanner!</title>
-</head>
-<body>
+{%extends "main_template.html"%}
 
-<p>Click on the "Choose File" button to upload a file: </p>
+{% block content%}
+<h1> mental health feedback app!! </h1>
+  
+<p> 
+  hey hey welcome to emotion scanner!! <br>
+  this is a place where you can input ur image and it will <br>
+  give u advice or feedback depending on your emotion :D <br>
+  <br> 
+  please make sure your face is clear and visible for no issues!! <br>
+
+  have fun heh... 
+</p>
+<p>
+  <br>
+  <br>
+  Click on the "Choose File" button to upload a file: </p>
 
 <form action="/storeimg" method="post" enctype="multipart/form-data">
   <input type="file" id="myFile" name="imgforminput" accept="image/*">
   <input type="submit">
 </form>
 
-</body>
-</html>
+{% endblock %}
