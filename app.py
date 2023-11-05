@@ -66,6 +66,15 @@ def process(location):
     dominant_emotion = predictions['dominant_emotion']
     return dominant_emotion
 
+@app.route('/aboutme/')
+def aboutme():
+    return render_template('aboutme.html')
+
+@app.route('/contactme/')
+def contactme():
+    return render_template('contactme.html')
+
+
 # def process(loc):
 #     img = io.imread(loc)
 #     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

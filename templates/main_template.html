@@ -8,21 +8,72 @@
 
 <style>
     li, a {
-        font_family:"Ubuntu";
+        font_family:"Lora";
         font-size: 16px;
-        color: #FFAEB7;
+        color: #7C4700;
         text-decoration: none;
     }
+    h1{
+        font_family:"Lora";
+        font-size: 20px;
+        color: #5C4033;
+    }
+    p {
+        font_family:"Lora";
+        font-size: 16px;
+        color: #7C4700;
+    }
+
+    .logo {
+        cursor: pointer;
+        font-family:"Lora";
+        font-size: 40px;
+        color: #5C4033;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5%;
+        background-color: #C4A484
+    }
+
+    .nav_links{
+        list-style: none
+    }
+
+    .nav_links li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+    
+    .nav_links li a:hover{
+        color: #FFFFFF;
+    }
+
+    .nav_links li a{
+        transition: all 0.3 ease 0s;
+    }
+    body   {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 30px;
+    background-color: white; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to top, rgb(241, 211, 178), rgb(249, 186, 143));
+    background-attachment: fixed;
+    
+  
+  }
 </style>
 
 <header>
-  <div> mental health feedback app!! </div>
-  <nav>
-      <ul>
-        <li> <a href= '{{ url_for('index')}}'> Home </a></li>
-        <li> <a href= '{{ url_for('index')}}'> About me </a></li>
-        <li> <a href= '{{ url_for('index')}}'> Contact me </a></li>
-        <li> <a href= '{{ url_for('index')}}'> Github </a> </li>
+  <div class="logo">mental health feedback app!!</div>
+  <nav> 
+      <ul class="nav_links">
+        <li> <a href='{{ url_for('index')}}'> Home </a></li>
+        <li> <a href= '{{ url_for('aboutme')}}'> About me </a></li>
+        <li> <a href= '{{ url_for('contactme')}}'> Contact me </a></li>
+        <li style="float:right"><a href="https://github.com/pragisharma/emotionScanner" target="_blank">GitHub</a></li>
       </ul>
     </nav>
 </header>
