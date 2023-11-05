@@ -13,7 +13,8 @@ https://github.com/pragisharma/emotionScanner
 ## resources
 
 <ul>
-  <li> Ehhhh from the unhelpful yt vid: https://github.com/dhruvpandey662/Emotion-detection  </li>
+<li> google doc planning https://docs.google.com/document/d/1i2NFinfePjczCYnAsl_nTlifKpTUHkMkFGGL_wWQvUk/edit </li>
+<li> Ehhhh from the unhelpful yt vid: https://github.com/dhruvpandey662/Emotion-detection  </li>
 
 <li> I should probably take a look at these:
 Thank purva: https://github.com/MaajidKhan/DeployMLModel-Flask/tree/master/templates 
